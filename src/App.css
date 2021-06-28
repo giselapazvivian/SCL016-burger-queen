@@ -1,10 +1,59 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mesero-container {
+  background-color: #0c1333;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 33% 33% 34%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+.mesa1 {
+  background: rgba(123, 179, 219, 0.5);
+  border: 5px solid #00bbf7;
+  box-sizing: border-box;
+  border-radius: 20px;
+  grid-row-start: 2;
+}
+.mesa2 {
+  background: rgba(123, 179, 219, 0.5);
+  border: 5px solid #00bbf7;
+  box-sizing: border-box;
+  border-radius: 20px;
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+.mesa3 {
+  background: rgba(123, 179, 219, 0.5);
+  border: 5px solid #00bbf7;
+  box-sizing: border-box;
+  border-radius: 20px;
+  grid-row-start: 2;
+  grid-column-start: 3;
+}
+.mesa4 {
+  background: rgba(123, 179, 219, 0.5);
+  border: 5px solid #00bbf7;
+  box-sizing: border-box;
+  border-radius: 20px;
+  grid-row-start: 3;
+  grid-column-start: 1;
+}
+.mesa5 {
+  background: rgba(123, 179, 219, 0.5);
+  border: 5px solid #00bbf7;
+  box-sizing: border-box;
+  border-radius: 20px;
+  grid-row-start: 3;
+  grid-column-start: 2;
+}
+.mesa6 {
+  background: rgba(123, 179, 219, 0.5);
+  border: 5px solid #00bbf7;
+  box-sizing: border-box;
+  border-radius: 20px;
+  grid-row-start: 3;
+  grid-column-start: 3;
 }
 
 @media (prefers-reduced-motion: no-preference) {
