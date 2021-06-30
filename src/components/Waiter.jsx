@@ -14,7 +14,7 @@ const Waiter = () => {
         <input type="text" value={name} onChange={(e)=> {updateName(e.target.value)}}></input>
         <input 
         type="image" 
-        onClick={() => history.push("/Menu")}
+        onClick={() => history.push("/Orders")}
         src={check} 
         alt="check">
         </input>

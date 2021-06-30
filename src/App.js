@@ -3,7 +3,7 @@ import './App.css';
 import React,{useState} from "react";
 import Home from './components/Home'
 import Waiter from './components/Waiter'
-import Menu from './components/Menu'
+import Orders from './components/Orders'
 import nameContext from './nameContext';
 
 import {
@@ -25,8 +25,8 @@ function App() {
         <Route path="/Waiter" exact>
             <Waiter />
           </Route>
-          <Route path="/Menu">
-            <Menu />
+          <Route path="/Orders">
+            <Orders />
           </Route>
           <Route path="/">
             <Home />
