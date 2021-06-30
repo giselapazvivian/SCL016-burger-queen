@@ -1,8 +1,8 @@
 
 //import logo from './logo.svg';
 import './App.css';
-import Inicio from './components/Inicio'
-import Mesero from './components/Mesero'
+import Home from './components/Home'
+import Waiter from './components/Waiter'
 // import Logo from './components/Logo'
 import React from "react";
 import {
@@ -20,16 +20,16 @@ function App() {
   // );
   return (
     <Router>
-      <div>
+      <div className="header">
         <nav>
           <ul>
-            <li>
+            <li className='linkHome'>
               <Link to="/">Inicio</Link>
             </li>
-            <li>
-              <Link to="/mesero">Mesero</Link>
+            <li className='linkWainter'>
+              <Link to="/Waiter">Mesero</Link>
             </li>
-            <li>
+            <li className='linkUsers'>
               <Link to="/users">Users</Link>
             </li>
           </ul>
@@ -38,14 +38,14 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/mesero">
-            <Mesero />
+          <Route path="/Waiter">
+            <Waiter />
           </Route>
           {/* <Route path="/users">
             <Users />
           </Route> */}
           <Route path="/">
-            <Inicio />
+            <Home />
           </Route>
         </Switch>
       </div>
