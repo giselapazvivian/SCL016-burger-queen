@@ -68,14 +68,40 @@
     box-sizing: border-box;
     border-radius: 20px;
     }
-
-@media (prefers-reduced-motion: no-preference) {
+.ordersMenu{
+  grid-column-start: 1;
+  grid-column-end: span col4-start;
+}
+h3{
+color: white;
+}
+li{
+  color: white;
+  list-style:none;
+}
+.nameList{
+  font-weight: bold;
+}
+.sushiButtonImg {
+  width: 40%   
+   }
+.coctelButtonImg{
+  width: 55%   
+   }
+.menuImg{
+  width: 30%   
+   }
+.obsButtonImg{
+  width: 55%   
+   }
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
-.App-header {
+
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -97,4 +123,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
