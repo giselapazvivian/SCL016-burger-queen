@@ -1,60 +1,73 @@
 .App {
   text-align: center;
 }
-.mesero-container {
+.header{
+  background-color: #0c1333;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: 33% 33% 34%;
+ }
+.homeContainer{
+  grid-column-start: 1;
+  grid-column-end: span col4-start;
+ }
+  .logoSushibar{
+    width: 40%;
+   }
+  .cocinaImg{
+    width: 15%;
+      }
+  .meserxImg{
+    width: 15%
+           
+     }
+.waiterContainer {
   background-color: #0c1333;
   height: 600px;
-  display: grid;
-  grid-template-columns: 33% 33% 34%;
-  grid-template-rows: 25% 25% 25% 25%;
-}
-.mesa1 {
-  background: rgba(123, 179, 219, 0.5);
-  border: 5px solid #00bbf7;
-  box-sizing: border-box;
-  border-radius: 20px;
-  grid-row-start: 2;
-}
-.mesa2 {
-  background: rgba(123, 179, 219, 0.5);
-  border: 5px solid #00bbf7;
-  box-sizing: border-box;
-  border-radius: 20px;
-  grid-row-start: 2;
-  grid-column-start: 2;
-}
-.mesa3 {
-  background: rgba(123, 179, 219, 0.5);
-  border: 5px solid #00bbf7;
-  box-sizing: border-box;
-  border-radius: 20px;
-  grid-row-start: 2;
-  grid-column-start: 3;
-}
-.mesa4 {
-  background: rgba(123, 179, 219, 0.5);
-  border: 5px solid #00bbf7;
-  box-sizing: border-box;
-  border-radius: 20px;
-  grid-row-start: 3;
   grid-column-start: 1;
-}
-.mesa5 {
-  background: rgba(123, 179, 219, 0.5);
-  border: 5px solid #00bbf7;
-  box-sizing: border-box;
-  border-radius: 20px;
-  grid-row-start: 3;
-  grid-column-start: 2;
-}
-.mesa6 {
-  background: rgba(123, 179, 219, 0.5);
-  border: 5px solid #00bbf7;
-  box-sizing: border-box;
-  border-radius: 20px;
-  grid-row-start: 3;
-  grid-column-start: 3;
-}
+  grid-column-end: span col1-start;
+  display: flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  grid-gap: 5% 20%;
+ }
+  .table1 {
+    background: rgba(123, 179, 219, 0.5);
+    border: 5px solid #00bbf7;
+    box-sizing: border-box;
+    border-radius: 20px;
+    }
+  .table2 {
+    background: rgba(123, 179, 219, 0.5);
+    border: 5px solid #00bbf7;
+    box-sizing: border-box;
+    border-radius: 20px;
+    }
+  .table3 {
+    background: rgba(123, 179, 219, 0.5);
+    border: 5px solid #00bbf7;
+    box-sizing: border-box;
+    border-radius: 20px;
+    }
+  .table4 {
+    background: rgba(123, 179, 219, 0.5);
+    border: 5px solid #00bbf7;
+    box-sizing: border-box;
+    border-radius: 20px;
+    }
+  .table5 {
+    background: rgba(123, 179, 219, 0.5);
+    border: 5px solid #00bbf7;
+    box-sizing: border-box;
+    border-radius: 20px;
+    }
+  .table6 {
+    background: rgba(123, 179, 219, 0.5);
+    border: 5px solid #00bbf7;
+    box-sizing: border-box;
+    border-radius: 20px;
+    }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
