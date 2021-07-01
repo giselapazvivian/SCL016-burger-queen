@@ -5,7 +5,7 @@ import menu from './menu.json'
 
 const MenuSushi = () => {
     
-    const [sushi, setsushi] = useState(menu)  
+    const [sushi] = useState(menu)  
     // const addSushi = () => {
     //     setsushi([...sushi])
     // }

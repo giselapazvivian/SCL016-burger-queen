@@ -1,13 +1,44 @@
-// import React,{useState} from 'react'
-// import nameContext from '../nameContext';
-// import obsButton from '../images/obsButton.png'
-// import apanadoTori from '../images/imagesSushi/apanadoTori.png'
+import React,{useState} from 'react'
+import obsButton from '../images/obsButton.png'
+import menu from './menu.json'
 
-// const MenuCoctel = () => {
-//     const sushiList = [
-//         {id:1, images:apanadoTori, name:"apanadoTori", description: "Pollo teriyaki,queso crema, envuelto en panko", price:6000},
-//         {id:2, images:champiRoll,name:"champiRoll", description: "Champiñón apanado,cebollín, queso crema, envuelto en palta", price:6000},
-//         {id:3, images:shirakiRoll, name:"shirakiRoll", description: "Camarón apanado, queso crema, palta, envuelto en salmón", price:6000},
-//         {id:4, images:toriCheese, name:"toriCheese", description: "Pollo teriyaki, palta, ciboulette, envueltos en queso crema con toques de merkén", price:6000}
-//     ]
-//     const [sushi, setsushi] = useState (sushiList)  
+
+const MenuCoctel = () => {
+    
+    const [coctel] = useState(menu)  
+    // const addSushi = () => {
+    //     setsushi([...sushi])
+    // }
+    console.log(coctel.coctelList);
+    return (
+            <div classname = "sushiList">
+               <ul >
+                   {
+                   coctel.coctelList.map((item,index) => (
+                       <li key={index}>
+                           <li>
+                           <img src={item.images} alt= {item.name} className = "menuImg" />
+                           </li>
+                           <li className= "nameList">
+                            {item.name}
+                            </li>
+                            <li>
+                             {item.description}
+                             </li>
+                             <li>{item.price}</li> 
+                             
+                          <input
+                             type="image"
+                             src={obsButton}
+                             alt="Botón observaciones"
+                             className="obsButtonImg"
+                            />
+                       </li>
+                   ))
+                }
+               </ul>
+       
+        </div>     
+     )
+  }
+  export default MenuCoctel;
