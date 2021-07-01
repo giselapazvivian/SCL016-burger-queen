@@ -1,57 +1,41 @@
-
 //import logo from './logo.svg';
 import './App.css';
-import Inicio from './components/Inicio'
-import Mesero from './components/Mesero'
-// import Logo from './components/Logo'
-import React from "react";
+import React,{useState} from "react";
+import Home from './components/Home'
+import Waiter from './components/Waiter'
+import Orders from './components/Orders'
+import nameContext from './nameContext';
+
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 function App() {
-  // return (
-  //   <div className='background'>
-  //     <Inicio/>
-  //   </div>
-  // );
+  const [name,setName] = useState(null);
+  const updateName =(value)=>{
+    setName(value)
+  }
   return (
+  <nameContext.Provider value={{name,updateName}}>
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Inicio</Link>
-            </li>
-            <li>
-              <Link to="/mesero">Mesero</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav>
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/mesero">
-            <Mesero />
+        <Route path="/Waiter" exact>
+            <Waiter />
           </Route>
-          {/* <Route path="/users">
-            <Users />
-          </Route> */}
+          <Route path="/Orders">
+            <Orders />
+          </Route>
           <Route path="/">
-            <Inicio />
+            <Home />
           </Route>
         </Switch>
       </div>
     </Router>
+    </nameContext.Provider>
   );
 }
 
 export default App;
-
