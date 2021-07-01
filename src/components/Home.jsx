@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="homeContainer">
       <img src={logoSushibar} alt="Sushibar" className="logoSushibar" />
-      <input
+        <input
         type="image"
         src={cocina}
         alt="Botón cocina"
