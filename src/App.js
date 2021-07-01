@@ -20,7 +20,7 @@ function App() {
   return (
   <nameContext.Provider value={{name,updateName}}>
     <Router>
-      <div className="header">
+      <div>
         <Switch>
         <Route path="/Waiter" exact>
             <Waiter />

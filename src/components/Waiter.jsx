@@ -44,8 +44,8 @@ const Waiter = () => {
         <input type="text"></input>
         <input type="image" src={check} alt="check"></input>
       </div>
-      <div>
-        <input type="image" onClick={() => history.goBack()} src={arrow} alt="arrow"></input>
+      <div className = "arrowImg">
+        <input type="image" onClick={() => history.goBack()} src={arrow} alt="arrow"  ></input>
       </div>
     </div>
   );
