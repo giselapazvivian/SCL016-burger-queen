@@ -2,12 +2,13 @@ import React, { useContext, useState } from "react";
 import nameContext from "../nameContext";
 import sushiButton from "../images/sushiButton.png";
 import coctelButton from "../images/coctelButton.png";
-import MenuSushi from "./MenuSushi";
-import MenuCoctel from "./MenuCoctel";
+import MenuBar from "./MenuBar";
+import menu from "../menu.json";
 
 const Orders = () => {
   const { name } = useContext(nameContext);
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(menu.sushiList);
+
   // const buttonSushi = () => {
   //   console.log(buttonSushi);
   //   return <MenuSushi/>
@@ -24,7 +25,7 @@ const Orders = () => {
           className="sushiButtonImg"
           // onClick = {buttonSushi}
           onClick={() => {
-            setShow(!show);
+            setShow(menu.sushiList);
           }}
         />
       </div>
@@ -35,16 +36,11 @@ const Orders = () => {
           alt="Botón Coctelería"
           className="coctelButtonImg"
           onClick={() => {
-            setShow(!show);
+            setShow(menu.coctelList);
           }}
         />
       </div>
-      {show ? (
-        <div><MenuSushi /></div>
-      ) : (
-        <div style={{ color: 'blue' }}><MenuCoctel /></div>
-      )}
-      
+      <MenuBar menu={show} />   
     </div>
   );
 };

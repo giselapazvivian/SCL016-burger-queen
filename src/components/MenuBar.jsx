@@ -1,20 +1,13 @@
 import React,{useState} from 'react'
 import obsButton from '../images/obsButton.png'
-import menu from './menu.json'
 
-
-const MenuSushi = () => {
+const MenuSushi = ({menu}) => {
     
-    const [sushi] = useState(menu)  
-    // const addSushi = () => {
-    //     setsushi([...sushi])
-    // }
-    console.log(sushi.sushiList);
-    return (
+        return (
             <div classname = "sushiList">
                <ul >
                    {
-                   sushi.sushiList.map((item,index) => (
+                   menu.map((item,index) => (
                        <li key={index}>
                            <li>
                            <img src={item.images} alt= {item.name} className = "menuImg" />
