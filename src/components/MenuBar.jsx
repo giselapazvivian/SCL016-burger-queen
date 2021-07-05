@@ -19,8 +19,7 @@ const MenuBar = ({menu}) => {
                              {item.description}
                              </li>
                              <li>{item.price}</li> 
-                             
-                          <input
+                           <input
                              type="image"
                              src={obsButton}
                              alt="Botón observaciones"
