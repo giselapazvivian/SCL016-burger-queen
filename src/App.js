@@ -20,7 +20,7 @@ function App() {
   return (
   <nameContext.Provider value={{name,updateName}}>
     <Router>
-      <div>
+     
         <Switch>
         <Route path="/Waiter" exact>
             <Waiter />
@@ -32,7 +32,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
-      </div>
+      
     </Router>
     </nameContext.Provider>
   );

@@ -4,6 +4,7 @@ import sushiButton from "../images/sushiButton.png";
 import coctelButton from "../images/coctelButton.png";
 import MenuBar from "./MenuBar";
 import menu from "../menu.json";
+import Command from "./Command"
 
 const Orders = () => {
   const { name } = useContext(nameContext);
@@ -13,8 +14,10 @@ const Orders = () => {
   //   console.log(buttonSushi);
   //   return <MenuSushi/>
   // }
+
+  const [command, setCommand] = useState([]);
   return (
-    <div classname="ordersMenu">
+    <div className="ordersMenu">
       <h3>Nombre: {name}</h3>
       <h3>Mesa: </h3>
       <div>
@@ -40,7 +43,18 @@ const Orders = () => {
           }}
         />
       </div>
-      <MenuBar menu={show} />   
+      {show.map((menu) => (
+              <MenuBar
+                key={menu.id}
+                menu={menu}
+                command={command}
+                setCommand={setCommand}
+                show={show}
+              />
+            ))}
+
+      <Command command={command} setCommand={setCommand}/>
+  
     </div>
   );
 };
