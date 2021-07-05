@@ -15,8 +15,8 @@ const Orders = () => {
   // }
   return (
     <div classname="ordersMenu">
-      <h3>Nombre: {name}</h3>
-      <h3>Mesa: </h3>
+      <h3>Nombre: { name }</h3>
+      <h3>Mesa:  </h3>
       <div>
         <input
           type="image"

@@ -1,7 +1,7 @@
-import React,{useState} from 'react'
+import React from 'react'
 import obsButton from '../images/obsButton.png'
 
-const MenuSushi = ({menu}) => {
+const MenuBar = ({menu}) => {
     
         return (
             <div classname = "sushiList">
@@ -34,4 +34,4 @@ const MenuSushi = ({menu}) => {
         </div>     
      )
   }
-  export default MenuSushi;
+  export default MenuBar;
