@@ -128,6 +128,11 @@ li{
 .obsButtonImg{
   width: 15%   
    }
+.command{
+  position: absolute;
+  top: 0;
+  right: 10vw;
+}
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
