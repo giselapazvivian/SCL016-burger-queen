@@ -3,6 +3,8 @@ import React from "react";
 
 const MenuBar = ({ menu, command, setCommand, show }) => {
   const { name, images, description, price, id } = menu;
+  
+  
 
   const addMenu = (id) => {
     const menu = show.filter((menu) => menu.id === id);
@@ -12,6 +14,7 @@ const MenuBar = ({ menu, command, setCommand, show }) => {
     const show = command.filter((menu) => menu.id !== id);
     setCommand(show);
   };
+ 
 
   return (
     <div>
@@ -32,7 +35,9 @@ const MenuBar = ({ menu, command, setCommand, show }) => {
           </div>
         ) : (
           <div>
-              <p>{name} ${price}</p>
+            <p>
+              {name} ${price}
+            </p>
             <button
               className="button"
               type="button"
@@ -40,8 +45,11 @@ const MenuBar = ({ menu, command, setCommand, show }) => {
             >
               Eliminar
             </button>
+
           </div>
+         
         )}
+        
       </ul>
     </div>
   );

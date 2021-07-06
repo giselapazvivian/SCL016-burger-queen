@@ -4,18 +4,16 @@ import sushiButton from "../images/sushiButton.png";
 import coctelButton from "../images/coctelButton.png";
 import MenuBar from "./MenuBar";
 import menu from "../menu.json";
-import Command from "./Command"
+import Command from "./Command";
 
 const Orders = () => {
   const { name } = useContext(nameContext);
   const [show, setShow] = useState(menu.sushiList);
-
-  // const buttonSushi = () => {
-  //   console.log(buttonSushi);
-  //   return <MenuSushi/>
-  // }
-
   const [command, setCommand] = useState([]);
+ 
+  let total = 0;
+  command.map((price) => (total = total + price.price));
+
   return (
     <div className="ordersMenu">
       <h3>Nombre: {name}</h3>
@@ -44,17 +42,17 @@ const Orders = () => {
         />
       </div>
       {show.map((menu) => (
-              <MenuBar
-                key={menu.id}
-                menu={menu}
-                command={command}
-                setCommand={setCommand}
-                show={show}
-              />
-            ))}
+        <MenuBar
+          key={menu.id}
+          menu={menu}
+          command={command}
+          setCommand={setCommand}
+          show={show}
+        />
+      ))}
 
-      <Command command={command} setCommand={setCommand}/>
-  
+      <Command command={command} setCommand={setCommand} />
+      <div className="cuenta">${total}</div>
     </div>
   );
 };
