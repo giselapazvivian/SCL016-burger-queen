@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 import obsButton from '../images/obsButton.png'
 
 const MenuSushi = ({menu}) => {
