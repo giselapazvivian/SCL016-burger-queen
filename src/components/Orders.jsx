@@ -12,7 +12,7 @@ const Orders = () => {
   const [command, setCommand] = useState([]);
  
   let total = 0;
-  command.map((price) => (total = total + price.price));
+  command.map((price) => (total = total + price.price*price.amount));
 
   return (
     <div className="ordersMenu">
