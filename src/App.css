@@ -4,17 +4,7 @@
 body {
   background-color: #0c1333;
 }
-/* .header{
-  background-color: #0c1333;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 25% 25% 25% 25%;
-  grid-template-columns: 33% 33% 34%;
- }
-.homeContainer{
-  grid-column-start: 1;
-  grid-column-end: span col4-start;
-  } */
+
 .homeContainer {
   height: 100vh;
   display: grid;
@@ -171,9 +161,6 @@ h2 {
   left: 90%;
 }
 
-
-
-
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -194,7 +181,6 @@ h2 {
 .App-link {
   color: #61dafb;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
