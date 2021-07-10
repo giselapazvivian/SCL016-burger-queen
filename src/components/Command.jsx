@@ -7,7 +7,7 @@ const Command = ({ command, setCommand }) => {
     <div className="command">
       <h3>Pedido</h3>
       {command.length === 0 ? (
-        <p>nada agregado</p>
+        <p>Nada agregado</p>
       ) : (
         command.map((menu) => (
           <MenuBar
