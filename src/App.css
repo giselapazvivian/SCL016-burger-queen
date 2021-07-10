@@ -164,6 +164,12 @@ h2 {
   margin: 4px 2px;
   border-radius: 5px;
 }
+.cuenta {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+}
 
 
 
