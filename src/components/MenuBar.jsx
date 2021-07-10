@@ -23,18 +23,17 @@ const MenuBar = ({ menu, command, setCommand, show }) => {
             <li>{description}</li>
             <li>${price}</li>
             <button
-              className="button"
+              className ="buttonAddRemove"
               type="button"
               onClick={() => addMenu(id)}
-            >
-              Agregar
+            >Agregar
             </button>
           </div>
         ) : (
           <div>
               <p>{name} ${price}</p>
             <button
-              className="button"
+              className ="buttonAddRemove"
               type="button"
               onClick={() => removeMenu(id)}
             >
