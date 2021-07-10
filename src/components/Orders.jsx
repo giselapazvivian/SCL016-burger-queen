@@ -17,7 +17,6 @@ const Orders = () => {
   return (
     <div className="ordersMenu">
       <h3>Nombre: {name}</h3>
-      <h3>Mesa: </h3>
       <div>
         <input
           type="image"
@@ -52,7 +51,7 @@ const Orders = () => {
       ))}
 
       <Command command={command} setCommand={setCommand} />
-      <div className="cuenta">${total}</div>
+      <div className= "cuenta">${total}</div>
     </div>
   );
 };

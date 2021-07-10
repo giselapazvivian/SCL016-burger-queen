@@ -11,39 +11,39 @@ const Waiter = () => {
     <div className="waiterContainer">
       <div className="table1">
         <h2>MESA 1</h2>
-        <input type="text" value={name}s onChange={(e)=> {updateName(e.target.value)}}></input>
-        <input 
+        <input className="inputContainer" type="text" value={name}s onChange={(e)=> {updateName(e.target.value)}}></input>
+        <input className="inputCheck"
         type="image" 
         onClick={() => history.push("/Orders")}
         src={check} 
         alt="check">
         </input>
-      </div>
+        </div>
       <div className="table2">
         <h2>MESA 2</h2>
-        <input type="text"></input>
-        <input type="image" src={check} alt="check"></input>
+        <input className="inputContainer" type="text"></input>
+        <input className="inputCheck" type="image" src={check} alt="check"></input>
       </div>
       <div className="table3">
         <h2>MESA 3</h2>
-        <input type="text"></input>
-        <input type="image" src={check} alt="check"></input>
-      </div>
+         <input className="inputContainer" type="text"></input>
+        <input className="inputCheck" type="image" src={check} alt="check"></input>
+        </div>
       <div className="table4">
         <h2>MESA 4</h2>
-        <input type="text"></input>
-        <input type="image" src={check} alt="check"></input>
-      </div>
+        <input className="inputContainer" type="text"></input>
+        <input className="inputCheck" type="image" src={check} alt="check"></input>
+        </div>
       <div className="table5">
         <h2>MESA 5</h2>
-        <input type="text"></input>
-        <input type="image" src={check} alt="check"></input>
-      </div>
+        <input className="inputContainer" type="text"></input>
+        <input className="inputCheck" type="image" src={check} alt="check"></input>
+        </div>
       <div className="table6">
         <h2>MESA 6</h2>
-        <input type="text"></input>
-        <input type="image" src={check} alt="check"></input>
-      </div>
+        <input className="inputContainer" type="text"></input>
+        <input className="inputCheck" type="image" src={check} alt="check"></input>
+        </div>
       <div className = "arrowImg">
         <input type="image" onClick={() => history.goBack()} src={arrow} alt="arrow"  ></input>
       </div>
